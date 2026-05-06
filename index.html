@@ -80,6 +80,9 @@
                         <li>
                             <a class="page-scroll" href="#organization">Organizers</a>
                         </li>
+                        <li>
+                            <a class="page-scroll" href="#sponsors">Sponsors</a>
+                        </li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -283,7 +286,7 @@
                     <ul class="large text-muted" style="float:left; width: 100%">
                         <li>
                             The workshop schedule is now available <a href="#program">here</a> 🎉
-                        </li>
+                        </li>   
                         <li>
                             Call for sponsorships is open! We are excited to invite industry partners to sponsor the ICLR 2026 Workshop on Multimodal Intelligence in Rio de Janeiro. 
                             Sponsorship provides exposure to top AI researchers, creates networking opportunities, and helps fund travel support for students and early-career researchers. If you’re interested, please contact us at <a href="mailto:mmintelligence.iclr2026@gmail.com">mmintelligence.iclr2026@gmail.com</a>.
@@ -688,7 +691,7 @@
                             <td>11:40 – 12:20</td>
                             <td>
                                 <div class="session-title">Keynote 3</div>
-                                <div class="session-detail">Chelsea Finn</div>
+                                <div class="session-detail">Chelsea Finn (Stanford University, Physical Intelligence)</div>
                             </td>
                         </tr>
                         <tr class="break-row">
@@ -1119,6 +1122,41 @@
                 padding: 0;
             }
 
+            .sponsors-block {
+                text-align: center;
+                max-width: 720px;
+                margin: 0 auto;
+            }
+
+            .sponsors-block .sponsor-thanks {
+                font-size: 1.15em;
+                line-height: 1.6;
+                color: #333;
+                margin-bottom: 28px;
+            }
+
+            .sponsors-block .sponsor-logo {
+                display: inline-block;
+                background: #1a1a1a;
+                padding: 22px 32px;
+                border-radius: 14px;
+                line-height: 0;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+            }
+
+            .sponsors-block .sponsor-logo:hover,
+            .sponsors-block .sponsor-logo:focus {
+                background: #242424;
+            }
+
+            .sponsors-block .sponsor-logo img {
+                max-width: 260px;
+                width: 100%;
+                height: auto;
+                display: block;
+                vertical-align: middle;
+            }
+
             /* Mobile Responsive Styles */
             @media (max-width: 768px) {
                 /* Header adjustments */
@@ -1207,8 +1245,9 @@
                     font-size: 1.8rem !important;
                 }
 
-                /* Contact section */
-                #contact {
+                /* Contact and sponsors (same band styling) */
+                #contact,
+                #sponsors {
                     padding: 40px 0 !important;
                 }
 
@@ -1288,9 +1327,7 @@
                     <p class="text-muted">Allen Institute for AI (AI2)</p>
                 </div>
 
-                
-
-
+            
             
         </div>
     </section>
@@ -1362,6 +1399,23 @@
                     </a>
                     <p class="text-muted">University of Amsterdam</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sponsors" style="padding: 60px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-heading">Sponsors</h2>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="sponsors-block">
+                <a class="sponsor-logo" href="https://modal.com/" target="_blank" rel="noopener noreferrer" title="Modal — high-performance AI infrastructure">
+                    <img src="./img/sponsors/modal-logo.png" alt="Modal logo">
+                </a>
             </div>
         </div>
     </section>
